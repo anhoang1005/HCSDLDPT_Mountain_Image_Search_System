@@ -122,6 +122,7 @@ for idx, (img_file, dissimilarity) in enumerate(top_similar_images):
     print(f"STT: {idx} - {img_file} - Độ sai khác: {dissimilarity}")
 print('\n')
 
+#Đọc ảnh input
 input_image = cv2.imread(input_path)
 input_rgb = cv2.cvtColor(input_image, cv2.COLOR_BGR2RGB)
 plt.subplot(3, 2, 1)
